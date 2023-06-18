@@ -1,0 +1,191 @@
+.token-unsubscribe-wrapper{
+    background-image: url('/assets/img/token-unsubscribe-background-img.svg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.token-unsubscribe-inner-wrapper{
+    display: flex;
+    gap: 110px;
+    align-items: flex-end;
+    margin-top: 10px;
+    margin-bottom: 48px;
+}
+.token-unsubscribe-inner-wrapper .left-desc{
+    flex-basis: 601px;
+}
+.token-unsubscribe-inner-wrapper .right-illus{
+    flex-basis: 635px;
+}
+.token-unsubscribe-inner-wrapper .right-illus img{
+    max-width: 100%;
+}
+.token-unsubscribe-inner-wrapper .left-desc .main-title{
+    font-family: 'General Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 68px;
+    line-height: 120%;
+    letter-spacing: -0.03em;
+    color: #1C2436;
+    max-width: 585px;
+    margin-bottom: 25px;
+}
+.token-unsubscribe-inner-wrapper .left-desc .page-short-desc{
+    font-family: 'General Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    margin-bottom: 43px;
+    color: #000000;
+}
+.news-letter-lists{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+.news-letter-lists .news-lettetr-item{
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    align-items: center;
+    cursor: pointer;
+    padding: 13px 20px 13px 15px;
+}
+.news-letter-lists .news-lettetr-item.selected{
+    background: #D6FFD8;
+    border-radius: 6px;
+}
+.news-letter-lists .news-lettetr-item .left-prior-desc{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.news-letter-lists .news-lettetr-item .left-prior-desc .round-newsletter-identify{
+    content: '';
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+.news-letter-lists .news-lettetr-item .left-prior-desc .newsletter-category{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: #25282B;
+}
+.news-letter-lists .news-lettetr-item .left-prior-desc .newsletter-desc{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    color: #A0A4A8;
+}
+.news-letter-lists .news-lettetr-item.selected .right-selected-round{
+    flex-basis: 20px;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    border: 6px solid rgba(39, 174, 96, 1);
+    display: inline-block;
+}
+.news-letter-lists .news-lettetr-item .right-selected-round{
+    flex-basis: 20px;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    border: 2px solid #4DF189;
+    display: inline-block;
+}
+
+.change-news-preference-btn{
+    margin-top: 28px;
+}
+.change-news-preference-btn button{
+    display: block;
+    background: #6FB93E;
+    border-radius: 4px;
+    padding: 16px 35px;
+    margin-bottom: 28px;
+    color: #FFFFFF;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+    border: none;
+    font-size: 14px;
+    line-height: 14px;
+    font-family: 'DM Sans';
+}
+.dont-send-me-link{
+    text-align: center;
+}
+.dont-send-me-link a{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.2px;
+    text-decoration-line: underline;
+    color: #5E81F4;
+}
+
+
+@media screen and (max-width: 834px) {
+    .token-unsubscribe-inner-wrapper .right-illus{
+      display: none;
+    }
+    .token-unsubscribe-inner-wrapper .left-desc{
+      flex-grow: 1;
+    }
+    .token-unsubscribe-inner-wrapper .left-desc .main-title{
+        font-family: 'General Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 58px;
+        letter-spacing: -0.03em;
+        color: #1C2436;
+        max-width: 585px;
+        margin-bottom: 106px;
+    }
+    .token-unsubscribe-inner-wrapper .left-desc .page-short-desc{
+        text-align: center;
+        margin-bottom: 28px;
+    }
+    .token-unsubscribe-inner-wrapper{
+        margin-top: 44px;
+    }
+    .token-unsubscribe-wrapper{
+        background-image: none;
+    }
+  }
+
+  @media screen and (max-width: 428px){
+    .token-unsubscribe-inner-wrapper{
+        margin-top: 27px;
+    }
+    .token-unsubscribe-inner-wrapper .left-desc .main-title{
+        font-family: 'General Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 45.6px;
+        letter-spacing: -0.03em;
+        color: #1C2436;
+        max-width: 585px;
+        margin-bottom: 17px;
+    }
+    .token-unsubscribe-inner-wrapper .left-desc .page-short-desc{
+        margin-bottom: 45px;
+    }
+  }

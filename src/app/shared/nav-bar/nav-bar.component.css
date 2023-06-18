@@ -1,0 +1,21 @@
+.nav-bar-wrtapper{
+    height: 90px;
+    background: #FFFFFF;
+    border-bottom: 1px solid #E8E7EE;
+    display: flex;
+    align-items: center;
+}
+.nav-bar-inner-wrtapper{
+    display: flex;
+    align-items: center;
+}
+.nav-bar-inner-wrtapper a{
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 100%;
+    color: #1C2436;
+    font-family: 'DM Sans', sans-serif;
+}

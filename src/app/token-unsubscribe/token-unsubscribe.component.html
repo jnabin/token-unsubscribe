@@ -1,0 +1,48 @@
+<div class="token-unsubscribe-wrapper">
+  <div class="container token-unsubscribe-inner-wrapper">
+    <div class="left-desc">
+      <div class="main-title">
+        <span>Arun,</span>
+        <br />
+        <span>Curate your Newsletters</span>
+      </div>
+      <div class="page-short-desc">
+        Eget penatibus odio consectetur diam semper dignissim faucibus
+        vulputate. Suspendisse aliquam hendrerit donec imperdiet semper. Tempor
+        in cursus et gravida dictum nulla enim mi malesuada. Viverra posuere
+        quam cras et venenatis.
+      </div>
+      <div class="news-letter-lists">
+        <div
+          *ngFor="let item of newsletterLists"
+          (click)="updateNewsLetterItem(item)"
+          class="news-lettetr-item"
+          [class.selected]="item.isSelected"
+        >
+          <div class="left-prior-desc">
+            <div
+              class="round-newsletter-identify"
+              [ngStyle]="{ 'background-color': item.color }"
+            ></div>
+            <div class="newsletter-name">
+              <div class="newsletter-category">{{ item.category }}</div>
+              <div class="newsletter-desc">{{ item.shortText }}</div>
+            </div>
+          </div>
+          <div class="right-selected-round"></div>
+        </div>
+      </div>
+      <div class="change-news-preference-btn">
+        <button (click)="moveToConfirmation()">
+            Change News Preferences
+        </button>
+      </div>
+      <div class="dont-send-me-link">
+        <a >Don’t send me Anything</a>
+      </div>
+    </div>
+    <div class="right-illus">
+        <img src="/assets/img/token-illus=illustration.png" alt="" srcset="">
+    </div>
+  </div>
+</div>
